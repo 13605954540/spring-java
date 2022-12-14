@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: final
+  profiles:
+    include: datasource, mybatis, redis
+
+server:
+  port: 30100
+

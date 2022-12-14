@@ -1,0 +1,24 @@
+server:
+  port: 8081
+  application:
+    name: lp-learn
+spring:
+  profiles:
+    include: datasource,freemarker,message,hibernate,redis,dubbo,eureka
+dubbo:
+  application:
+    name: lp-learn
+beach:
+  id: 1
+  name: 婊子
+  age: 30
+  map: {key1: value1,key2: value2}
+  list:
+    - 数组1
+    - 数组2
+    - 数组3
+  dog:
+    id: 2
+    name: 狗
+
+

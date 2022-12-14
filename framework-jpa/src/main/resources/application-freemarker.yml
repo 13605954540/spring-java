@@ -1,0 +1,10 @@
+spring:
+  freemarker:
+      allow-request-override=false: false
+      cache: false
+      check-template-location: true
+      charset: UTF-8
+      content-type: text/html
+      expose-request-attributes: false
+      expose-session-attributes: false
+      expose-spring-macro-helpers: false
