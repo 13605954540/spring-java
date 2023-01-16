@@ -1,14 +1,11 @@
 package com.lp.last.controller;
 
 import com.lp.last.bean.Test;
-import com.lp.last.condition.TestCondition;
 import com.lp.last.framework.base.BaseController;
 import com.lp.last.service.TestService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author 苹神

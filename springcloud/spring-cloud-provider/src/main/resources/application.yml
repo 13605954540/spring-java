@@ -1,6 +1,10 @@
 spring:
   application:
     name: spring-cloud-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
 
 server:
   port: 30001

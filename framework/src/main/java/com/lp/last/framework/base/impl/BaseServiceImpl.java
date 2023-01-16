@@ -19,17 +19,15 @@ import java.io.Serializable;
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 
 public class BaseServiceImpl<M extends BaseMapper<T>, T extends BaseEntity> implements BaseService<T> {
 
     @Autowired
     protected M mapper;
 
+    @Autowired
     private RedisTemplate redisTemplate;
-
-    public M getBaseMapper() {
-        return this.mapper;
-    }
 
     @Override
     public T insert(T t) {
@@ -126,14 +124,11 @@ public class BaseServiceImpl<M extends BaseMapper<T>, T extends BaseEntity> impl
     @Override
     public T selectByIdCache(String id) {
         T t = (T) redisTemplate.opsForValue().get(id);
-        T result = null;
-        if (t != null) {
-            result = t;
-        } else {
-            result = mapper.selectById(id);
-            redisTemplate.opsForValue().set(String.valueOf(id), result);
-        }
-        return result;
+        return Optional.ofNullable(t).orElseGet(() -> {
+            T r = mapper.selectById(id);
+            redisTemplate.opsForValue().set(id, r);
+            return r;
+        });
     }
 
     @Override

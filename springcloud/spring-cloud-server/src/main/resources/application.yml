@@ -1,10 +1,11 @@
 spring:
   application:
     name: spring-cloud-server
-
-server:
-  port: 30002
   cloud:
     nacos:
       discovery:
-        server-addr: localhost:8850
+        server-addr: localhost:8848
+
+server:
+  port: 30002
+
