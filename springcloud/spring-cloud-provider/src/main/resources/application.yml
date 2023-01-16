@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: spring-cloud-provider
+
+server:
+  port: 30001
+
