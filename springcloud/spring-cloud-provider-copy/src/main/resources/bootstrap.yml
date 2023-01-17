@@ -12,6 +12,3 @@ spring:
       config:
         server-addr: localhost:8848         #Nacos????????
         file-extension: yaml
-    loadbalancer:
-      ribbon:
-        enabled: false
