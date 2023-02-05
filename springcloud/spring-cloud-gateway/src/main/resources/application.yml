@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-cloud-gateway
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+        port: 8719
+server:
+  port: 30004
+  #servlet:
+    #context-path: /${spring.application.name}
+
+
