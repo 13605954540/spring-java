@@ -9,21 +9,22 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
-/**
- * 第一种方式：implements GlobalFilter, Ordered
- *
+/*
+ * <pre>
+ * 自定义全局过滤器 implements GlobalFilter, Ordered
+ * </pre>
  */
 @Component
-@Log
+//@Log
 public class CustomFilter2 implements GlobalFilter, Ordered {
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         String uname = exchange.getRequest().getQueryParams().getFirst("uname");
-        if(uname==null){
-            log.info("*******用户名为null，非法用户，o(╥﹏╥)o");
+/*        if(uname==null){
+            System.err.println("*******用户名为null，非法用户，o(╥﹏╥)o");
             exchange.getResponse().setStatusCode(HttpStatus.NOT_ACCEPTABLE);
             return exchange.getResponse().setComplete();
-        }
+        }*/
         // 合法用户就放行
         return chain.filter(exchange);
     }

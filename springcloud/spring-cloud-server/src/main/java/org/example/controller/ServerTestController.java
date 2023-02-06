@@ -15,18 +15,4 @@ import org.springframework.web.client.RestTemplate;
 @RequestMapping("/server-test")
 public class ServerTestController {
 
-    @Autowired
-    public RestTemplate restTemplate;
-
-    @Autowired
-    private Man man;
-
-    @GetMapping("/go")
-    private ResponseEntity<String> test() {
-        for(int i = 0; i < 20; i++) {
-            ResponseEntity<String> res = restTemplate.getForEntity("http://spring-cloud-provider/provider-test/go", String.class);
-            System.err.println(res.getBody());
-        }
-        return null;
-    }
 }
