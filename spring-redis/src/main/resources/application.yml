@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: spring-redis
+
+server:
+  port: 20000
+

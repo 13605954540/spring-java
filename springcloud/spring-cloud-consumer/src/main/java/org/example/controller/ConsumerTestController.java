@@ -3,14 +3,18 @@ package org.example.controller;
 import org.apache.dubbo.config.ReferenceConfig;
 import org.apache.dubbo.config.utils.ReferenceConfigCache;
 import org.apache.dubbo.rpc.service.GenericService;
+import org.apache.kafka.clients.producer.ProducerRecord;
+import org.example.bean.ResponseResult;
+import org.example.util.NettyClientUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.kafka.core.KafkaTemplate;
+import org.springframework.kafka.support.SendResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Future;
 
 @CrossOrigin
 @RestController
@@ -19,6 +23,9 @@ public class ConsumerTestController {
 
     @Autowired
     public RestTemplate restTemplate;
+
+    @Autowired
+    public KafkaTemplate kafkaTemplate;
 
     //暂时注释 并移除包引入 因为会导致负载均衡失效
 /*    @DubboReference(version = "2.0.0")
@@ -58,24 +65,27 @@ public class ConsumerTestController {
         return result;
     }
 
-    public static void main(String[] args) {
-        int n = 16;
-        String a = "懂";
-        int hashValue = hash(a);
-        System.err.println(hash(a));
-        Map<String, Integer> map = new HashMap<>();
-        map.put("6", 90);
-        System.err.println(map.put("6", 101111));
-        int b = 8;
-        int c = 256;
-        System.err.println(hashValue % 16);
-        System.err.println((16 - 1) & hashValue);
-        char [] cc = new char[8];
-        System.err.println("cc: " + cc[5]);
+    /**
+     * netty 请求
+     *
+     * @param msg
+     * @return
+     */
+    @GetMapping("/helloNetty")
+    public ResponseResult helloNetty(@RequestParam String msg) {
+        return NettyClientUtils.helloNetty(msg);
     }
 
-    static final int hash(Object key) {
-        int h;
-        return (key == null) ? 0 : (h = key.hashCode()) ^ (h >>> 16);
+    /**
+     * kafka消费
+     *
+     * @return
+     */
+    @GetMapping("/kafka")
+    public ResponseResult kafka() throws ExecutionException, InterruptedException {
+        Future<SendResult> val = kafkaTemplate.send(new ProducerRecord("test", "new的go"));
+        SendResult sendResult = val.get();
+        System.err.println("--------------------- " + sendResult.toString() + "  ------------------------");
+        return ResponseResult.ok();
     }
 }

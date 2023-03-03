@@ -1,6 +1,13 @@
 spring:
   application:
     name: spring-cloud-consumer
+  kafka:
+    bootstrap-servers: 192.168.2.22:9092
+    producer:
+      acks: all
+    consumer:
+      group-id: node1-group #三个服务分别为node1 node2 node3
+      enable-auto-commit: false
 
 server:
   port: 30000
