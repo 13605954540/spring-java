@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: spring-elasticsearch
+  profiles:
+    active: dev
+#  data:
+#    elasticsearch:
+#      cluster-name: elasticsearch
+#      cluster-nodes: localhost:9300
+
+  elasticsearch:
+    rest:
+      uris:
+      - http://localhost:9200
+
+server:
+  port: 50002
