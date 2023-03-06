@@ -1,6 +1,9 @@
 package org.example.base;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.springframework.data.domain.Pageable;
+
+import java.util.List;
 
 public class BasePageCondition<T> extends Page {
 

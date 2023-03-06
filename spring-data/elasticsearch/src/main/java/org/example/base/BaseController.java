@@ -49,9 +49,11 @@ public abstract class BaseController<E extends BaseEntity, C extends BaseService
 
     @ApiOperation("根据实体参数查询")
     @PostMapping("/selectByCondition")
-    protected <E extends BaseCondition>BaseResp selectList(@RequestBody E condition) {
+    protected BaseResp selectList(@RequestBody E condition) {
+//        T t = null;
+        return ok(service.find(condition));
 //        return ok(service.selectByCondition(condition));
-        return null;
+//        return null;
     }
 
     @ApiOperation("分页查询")

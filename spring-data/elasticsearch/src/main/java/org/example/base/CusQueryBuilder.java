@@ -1,15 +1,17 @@
 package org.example.base;
 
+import com.google.common.collect.Maps;
 import org.elasticsearch.index.query.BoolQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.sort.SortBuilder;
 import org.elasticsearch.search.sort.SortBuilders;
 import org.elasticsearch.search.sort.SortOrder;
-import org.springframework.beans.BeanUtils;
+import org.springframework.cglib.beans.BeanMap;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.elasticsearch.core.query.NativeSearchQuery;
 import org.springframework.data.elasticsearch.core.query.NativeSearchQueryBuilder;
+import org.springframework.data.elasticsearch.core.query.Query;
 import org.springframework.util.Assert;
 import org.springframework.util.CollectionUtils;
 
@@ -35,10 +37,32 @@ public class CusQueryBuilder<T> {
     }
 
     public CusQueryBuilder(T p) {
-        Assert.isNull(p, "Param can not be null");
+        verifyAndParse(p);
+    }
+
+    /**
+     * 校验，并把实体类非空参数转换查询参数
+     *
+     * @param p
+     */
+    private void verifyAndParse(T p) {
+        Assert.notNull(p, "Param can not be null");
         this.t = p;
-//        this.param = BeanUtils.beanToMap(this.t);
+        this.param = Maps.newHashMap();
+        BeanMap beanMap = BeanMap.create(p);
+        for (Object key : beanMap.keySet()) {
+            Object value = beanMap.get(key);
+            if(value == null) {
+                continue;
+            }
+            this.param.put(key + "", value);
+        }
         boolQueryBuilder = new BoolQueryBuilder();
+    }
+
+    public CusQueryBuilder(T p, Pageable pageable) {
+        verifyAndParse(p);
+        this.page = PageRequest.of(pageable.getPageNumber() - 1, pageable.getPageSize());
     }
 
     public CusQueryBuilder<T> eq(String key, Serializable value) {
@@ -186,7 +210,8 @@ public class CusQueryBuilder<T> {
         return this;
     }
 
-    public NativeSearchQuery pageBuild() {
+    //分页
+    public NativeSearchQuery buildPage() {
         NativeSearchQueryBuilder queryBuilder = new NativeSearchQueryBuilder();
         if(this.t != null) {
             for(String key: this.param.keySet()) {
@@ -203,12 +228,12 @@ public class CusQueryBuilder<T> {
         return queryBuilder.build();
     }
 
-    public BoolQueryBuilder build() {
+    public Query build() {
         if(this.t != null) {
             for(String key: this.param.keySet()) {
                 boolQueryBuilder.must(QueryBuilders.termQuery(key, this.param.get(key)));
             }
         }
-        return boolQueryBuilder;
+        return new NativeSearchQuery(boolQueryBuilder);
     }
 }

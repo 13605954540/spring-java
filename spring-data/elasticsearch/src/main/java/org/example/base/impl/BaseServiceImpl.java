@@ -1,5 +1,8 @@
 package org.example.base.impl;
 
+import org.springframework.data.domain.PageImpl;
+import org.springframework.data.elasticsearch.core.SearchHit;
+import org.springframework.data.elasticsearch.core.SearchHits;
 import org.example.base.BaseCondition;
 import org.example.base.BaseEntity;
 import org.example.base.BaseService;
@@ -7,18 +10,22 @@ import org.example.base.CusQueryBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 import org.springframework.util.Assert;
 
 import java.io.Serializable;
-import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 public class BaseServiceImpl<T extends BaseEntity,E extends BaseCondition, R extends ElasticsearchRepository<T, Serializable>> implements BaseService<T, E> {
 
     @Autowired
     private R r;
+
+    @Autowired
+    public ElasticsearchRestTemplate elasticsearchRestTemplate;
 
     @Override
     public T save(T t) {
@@ -38,9 +45,11 @@ public class BaseServiceImpl<T extends BaseEntity,E extends BaseCondition, R ext
     }
 
     @Override
-    public Collection<T> find(T t) {
-        return null;
-//        return Lists.newArrayList(r.search(new CusQueryBuilder<T>(t).build()));
+    public List<T> find(T t) {
+        return ((SearchHits<T>)elasticsearchRestTemplate.search(
+                new CusQueryBuilder<T>(t).build(),
+                t.getClass())
+        ).getSearchHits().stream().map(SearchHit::getContent).collect(Collectors.toList());
     }
 
     @Override
@@ -64,7 +73,7 @@ public class BaseServiceImpl<T extends BaseEntity,E extends BaseCondition, R ext
 
     @Override
     public void deleteBatchIds(List<Serializable> ids) {
-        Assert.notNull(ids, "Ids must not be null！");
+        Assert.notEmpty(ids, "Ids must not be null！");
         r.deleteAllById(ids);
     }
 
@@ -75,7 +84,13 @@ public class BaseServiceImpl<T extends BaseEntity,E extends BaseCondition, R ext
 
     @Override
     public Page<T> selectPage(T t, Pageable pageable) {
-//        return r.searchSimilar(new CusQueryBuilder<T>(t).pageBuild());
-        return null;
+        SearchHits<T> searchHits = ((SearchHits<T>)elasticsearchRestTemplate.search(
+                new CusQueryBuilder<T>(t, pageable).buildPage(), t.getClass())
+        );
+        List<T> records = searchHits.getSearchHits()
+                .stream()
+                .map(SearchHit::getContent)
+                .collect(Collectors.toList());
+        return new PageImpl(records, pageable, searchHits.getTotalHits());
     }
 }

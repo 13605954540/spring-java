@@ -2,6 +2,8 @@ package org.example.base;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.elasticsearch.core.SearchHit;
+import org.springframework.data.elasticsearch.core.SearchHits;
 
 import java.io.Serializable;
 import java.util.Collection;
@@ -39,7 +41,7 @@ public interface BaseService<T extends BaseEntity, E extends BaseCondition> {
      * @param t
      * @return
      */
-    Collection<T> find(T t);
+    List<T> find(T t);
 
     /**
      * 编辑
