@@ -127,7 +127,7 @@ public class CusQueryBuilder<T> {
 
     public CusQueryBuilder<T> in(boolean isTrue, String key, Collection<Serializable> values) {
         if(isTrue) {
-            this.in(key, values)
+            this.in(key, values);
         }
         return this;
     }
