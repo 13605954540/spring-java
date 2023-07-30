@@ -17,6 +17,7 @@ import org.springframework.util.CollectionUtils;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
@@ -70,6 +71,16 @@ public class CusQueryBuilder<T> {
         return this;
     }
 
+    public CusQueryBuilder<T> in(String key, Collection<Serializable> values) {
+        boolQueryBuilder.must(QueryBuilders.termsQuery(key, values));
+        return this;
+    }
+
+    public CusQueryBuilder<T> notIn(String key, Collection<Serializable> values) {
+        boolQueryBuilder.mustNot(QueryBuilders.termsQuery(key, values));
+        return this;
+    }
+
     public CusQueryBuilder<T> ne(String key, Serializable value) {
         boolQueryBuilder.mustNot(QueryBuilders.termQuery(key,value));
         return this;
@@ -109,56 +120,70 @@ public class CusQueryBuilder<T> {
 
     public CusQueryBuilder<T> eq(boolean isTrue, String key, Serializable value) {
         if(isTrue) {
-            boolQueryBuilder.must(QueryBuilders.termQuery(key, value));
+            this.eq(key, value);
+        }
+        return this;
+    }
+
+    public CusQueryBuilder<T> in(boolean isTrue, String key, Collection<Serializable> values) {
+        if(isTrue) {
+            this.in(key, values);
+        }
+        return this;
+    }
+
+    public CusQueryBuilder<T> notIn(boolean isTrue, String key, Collection<Serializable> values) {
+        if(isTrue) {
+            this.notIn(key, values);
         }
         return this;
     }
 
     public CusQueryBuilder<T> ne(boolean isTrue, String key, Serializable value) {
         if(isTrue) {
-            boolQueryBuilder.mustNot(QueryBuilders.termQuery(key, value));
+            this.ne(key, value);
         }
         return this;
     }
 
     public CusQueryBuilder<T> like(boolean isTrue, String key, Serializable value) {
         if(isTrue) {
-            boolQueryBuilder.must(QueryBuilders.matchQuery(key, value));
+            this.like(key, value);
         }
         return this;
     }
 
     public CusQueryBuilder<T> notLike(boolean isTrue, String key, Serializable value) {
         if(isTrue) {
-            boolQueryBuilder.mustNot(QueryBuilders.matchQuery(key, value));
+            this.notLike(key, value);
         }
         return this;
     }
 
     public CusQueryBuilder<T> ge(boolean isTrue, String key, Serializable value) {
         if(isTrue) {
-            boolQueryBuilder.must(QueryBuilders.rangeQuery(key).gte(value));
+            this.ge(key, value);
         }
         return this;
     }
 
     public CusQueryBuilder<T> gt(boolean isTrue, String key, Serializable value) {
         if(isTrue) {
-            boolQueryBuilder.must(QueryBuilders.rangeQuery(key).gt(value));
+            this.gt(key, value);
         }
         return this;
     }
 
     public CusQueryBuilder<T> le(boolean isTrue, String key, Serializable value) {
         if(isTrue) {
-            boolQueryBuilder.must(QueryBuilders.rangeQuery(key).lte(value));
+            this.le(key, value);
         }
         return this;
     }
 
     public CusQueryBuilder<T> lt(boolean isTrue, String key, Serializable value) {
         if(isTrue) {
-            boolQueryBuilder.must(QueryBuilders.rangeQuery(key).lt(value));
+            this.lt(key, value);
         }
         return this;
     }
@@ -211,7 +236,7 @@ public class CusQueryBuilder<T> {
     }
 
     //分页
-    public NativeSearchQuery buildPage() {
+    public Query buildPage() {
         NativeSearchQueryBuilder queryBuilder = new NativeSearchQueryBuilder();
         if(this.t != null) {
             for(String key: this.param.keySet()) {
