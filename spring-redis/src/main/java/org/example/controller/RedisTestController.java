@@ -1,13 +1,18 @@
 package org.example.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.connection.RedisConnection;
 import org.springframework.data.redis.core.*;
+import org.springframework.data.redis.serializer.RedisSerializer;
+import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 /**
  * redis各类型实操
@@ -110,6 +115,73 @@ public class RedisTestController {
         zSetOperations.add(ZSET_KEY, 111, 11);
         Set set = zSetOperations.range(ZSET_KEY, 0 ,10);
         return set;
+    }
+
+    @GetMapping("/excute")
+    public void excute() {
+//        String key = "game1";
+//        Long currentVolume = redisTemplate.execute((RedisCallback<Long>) connection -> {
+//            @SuppressWarnings("unchecked") byte[] rawKey = Optional.ofNullable(
+//                    ((RedisSerializer<String>) redisTemplate.getKeySerializer()).serialize(key)
+//            ).orElseThrow(RuntimeException::new);
+//            @SuppressWarnings("unchecked") byte[] rawHashKey = Optional.ofNullable(
+//                    ((RedisSerializer<String>) redisTemplate.getHashKeySerializer()).serialize(hashKey)
+//            ).orElseThrow(RuntimeException::new);
+////            connection.multi();
+//            connection.openPipeline();
+//            connection.hIncrBy(rawKey, rawHashKey, 1L);
+//            connection.expire(rawKey, TimeUnit.SECONDS.convert(1L, TimeUnit.HOURS));
+//            List<Object> objects = connection.closePipeline();
+////            connection.exec();
+//            return objects.stream().findFirst().map(s -> (Long) s).orElseThrow(RuntimeException::new);
+//        });
+        return;
+    }
+
+    @GetMapping("/excuteSession")
+    public void excuteSession() {
+/*        List<Object> list = redisTemplate.execute((SessionCallback<Object>) connect -> {
+            connect.multi();
+//            RedisSerializer<String> ser = new StringRedisSerializer();
+            RedisSerializer<String> stringSerializer = new StringRedisSerializer();
+
+            connect.opsForValue().set(stringSerializer.serialize("game1"), stringSerializer.serialize("1"));
+            connect.opsForValue().set(stringSerializer.serialize("game2"), stringSerializer.serialize("2"));
+            return connect.exec();
+        });*/
+
+/*        for(Object obj : list) {
+            System.err.println(obj);
+        }*/
+//        ValueOperations<String, Integer> valueOperations = redisTemplate.opsForValue();
+//        valueOperations.set("oneGame", 1);
+//        valueOperations.increment("oneGame");
+//        ValueOperations<String, Long> valueOps = redisTemplate.opsForValue();
+//        valueOps.set("oneGame", 1L);
+//        valueOps.increment("oneGame", 1L);
+        System.err.println("begin: " + redisTemplate.opsForValue().get("key1"));
+        try {
+            redisTemplate.executePipelined(new SessionCallback<Object>() {
+                @Override
+                public Object execute(RedisOperations operations) {
+                    operations.multi();
+                    operations.opsForValue().set("key50000", 2);
+                    operations.opsForValue().increment("key1");
+//                    int d = 5 / 0;
+                    operations.opsForValue().set("key20", 200);
+                    List exec = operations.exec();
+                    for(Object obj: exec) {
+                        System.err.println("inner: " + obj);
+                    }
+                    return null;
+                }
+            });
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+        } finally {
+            System.err.println("key50000: " + redisTemplate.opsForValue().get("key50000"));
+            System.err.println("end: " + redisTemplate.opsForValue().get("key1"));
+        }
     }
 
     /**

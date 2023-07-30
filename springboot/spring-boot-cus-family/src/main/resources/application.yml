@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: spring-boot-family
+
+server:
+  port: 40500
+
+#simplebean:
+#  id: 2
+#  name: '2'
+

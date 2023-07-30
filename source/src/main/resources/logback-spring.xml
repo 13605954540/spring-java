@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+
+    <include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
+
+<!--    <turboFilter class="com.lp.test.util.CusFilter"/>-->
+
+    <springProperty name="LOG_PATH" source="logging.path" scope="context" defaultValue="./logs/"/>
+    <property name="BASE_PATH" value="${LOG_PATH:-${LOG_TEMP:-${java.io.tmpdir:-/tmp}}}/"/>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg (%C:%L)%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <encoder>
+<!--            <pattern>${FILE_LOG_PATTERN}</pattern>-->
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %C:%L - %msg %n</pattern>
+
+        </encoder>
+        <file>${BASE_PATH}/service.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${BASE_PATH}/service.%d{yyyy-MM-dd-HH}.log</fileNamePattern>
+            <maxHistory>720</maxHistory>
+        </rollingPolicy>
+    </appender>
+
+    <logger name="org.apache.curator.framework.imps.CuratorFrameworkImpl" level="WARN"/>
+    <logger name="org.apache.curator.framework.state.ConnectionStateManagern" level="WARN"/>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
+    </root>
+
+    <root level="DEBUG">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
+    </root>
+
+</configuration>

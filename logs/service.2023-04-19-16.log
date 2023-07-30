@@ -1,0 +1,120 @@
+16:00:55.347 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681891255347 sessioncount 0 
+16:00:55.349 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 2 expired sessions: 0 
+16:01:55.402 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681891315402 sessioncount 0 
+16:01:55.402 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:02:55.455 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681891375455 sessioncount 0 
+16:02:55.456 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 1 expired sessions: 0 
+16:03:55.502 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681891435502 sessioncount 0 
+16:03:55.502 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:04:55.545 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681891495545 sessioncount 0 
+16:04:55.545 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:05:55.573 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681891555573 sessioncount 0 
+16:05:55.573 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:06:55.623 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681891615623 sessioncount 0 
+16:06:55.623 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:07:55.671 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681891675671 sessioncount 0 
+16:07:55.671 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:08:55.710 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681891735710 sessioncount 0 
+16:08:55.710 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:09:55.765 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681891795765 sessioncount 0 
+16:09:55.765 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:10:55.799 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681891855799 sessioncount 0 
+16:10:55.799 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:11:55.829 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681891915829 sessioncount 0 
+16:11:55.829 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:12:55.874 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681891975874 sessioncount 0 
+16:12:55.874 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:13:55.923 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681892035923 sessioncount 0 
+16:13:55.923 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:14:55.965 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681892095965 sessioncount 0 
+16:14:55.965 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:15:56.013 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681892156013 sessioncount 0 
+16:15:56.013 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:16:56.090 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681892216090 sessioncount 0 
+16:16:56.090 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:17:56.106 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681892276106 sessioncount 0 
+16:17:56.106 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:18:56.152 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681892336152 sessioncount 0 
+16:18:56.152 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:19:56.201 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681892396201 sessioncount 0 
+16:19:56.201 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:20:56.271 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681892456271 sessioncount 0 
+16:20:56.271 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:21:56.325 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681892516325 sessioncount 0 
+16:21:56.325 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:22:56.385 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681892576385 sessioncount 0 
+16:22:56.385 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:23:56.420 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681892636420 sessioncount 0 
+16:23:56.420 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:24:56.479 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681892696479 sessioncount 0 
+16:24:56.479 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:25:56.545 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681892756545 sessioncount 0 
+16:25:56.545 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:26:56.599 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681892816599 sessioncount 0 
+16:26:56.599 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:27:56.653 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681892876653 sessioncount 0 
+16:27:56.653 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:28:56.716 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681892936716 sessioncount 0 
+16:28:56.716 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:29:56.759 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681892996759 sessioncount 0 
+16:29:56.759 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:30:56.815 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681893056815 sessioncount 0 
+16:30:56.815 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:31:56.866 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681893116866 sessioncount 0 
+16:31:56.866 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:32:56.915 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681893176915 sessioncount 0 
+16:32:56.915 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:33:56.957 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681893236957 sessioncount 0 
+16:33:56.957 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:34:56.989 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681893296989 sessioncount 0 
+16:34:56.989 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:35:57.037 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681893357037 sessioncount 0 
+16:35:57.037 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:36:57.070 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681893417070 sessioncount 0 
+16:36:57.070 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:37:57.126 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681893477126 sessioncount 0 
+16:37:57.126 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:38:57.167 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681893537167 sessioncount 0 
+16:38:57.167 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:39:57.234 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681893597234 sessioncount 0 
+16:39:57.234 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:40:57.267 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681893657267 sessioncount 0 
+16:40:57.267 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:41:57.314 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681893717314 sessioncount 0 
+16:41:57.314 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:42:57.344 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681893777344 sessioncount 0 
+16:42:57.344 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:43:57.396 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681893837396 sessioncount 0 
+16:43:57.396 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:44:57.437 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681893897437 sessioncount 0 
+16:44:57.437 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:45:57.481 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681893957481 sessioncount 0 
+16:45:57.481 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:46:57.533 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681894017533 sessioncount 0 
+16:46:57.533 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:47:57.565 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681894077565 sessioncount 0 
+16:47:57.565 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:48:57.613 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681894137613 sessioncount 0 
+16:48:57.613 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:49:57.653 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681894197653 sessioncount 0 
+16:49:57.653 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:50:57.703 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681894257703 sessioncount 0 
+16:50:57.703 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:51:57.741 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681894317741 sessioncount 0 
+16:51:57.741 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:52:57.811 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681894377811 sessioncount 0 
+16:52:57.811 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:53:57.859 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681894437859 sessioncount 0 
+16:53:57.859 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:54:57.909 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681894497909 sessioncount 0 
+16:54:57.909 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:55:57.955 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681894557955 sessioncount 0 
+16:55:57.955 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:56:58.007 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681894618007 sessioncount 0 
+16:56:58.007 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:57:58.051 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681894678051 sessioncount 0 
+16:57:58.051 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:58:58.092 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681894738092 sessioncount 0 
+16:58:58.092 [Catalina-utility-2] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 
+16:59:58.140 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - Start expire sessions StandardManager at 1681894798140 sessioncount 0 
+16:59:58.140 [Catalina-utility-1] DEBUG org.apache.juli.logging.DirectJDKLog:173 - End expire sessions StandardManager processingTime 0 expired sessions: 0 

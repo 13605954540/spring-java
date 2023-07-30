@@ -15,25 +15,36 @@ import java.lang.reflect.Proxy;
 public class JdkDynamixProxy {
 
     public interface Sample {
+
         void todo();
+
+        void toReturn();
     }
 
     public class SampleImpl implements Sample {
 
         @Override
         public void todo() {
+            System.err.println("----------------- to do ------------------");
+        }
 
+        @Override
+        public void toReturn() {
+            System.err.println("----------------- to return ------------------");
         }
     }
 
     public class CustomProxy {
         SampleImpl sample = new SampleImpl();
+//        Object target;
 
         public Sample getProxyObj() {
             Sample s = (Sample) Proxy.newProxyInstance(sample.getClass().getClassLoader(), sample.getClass().getInterfaces(), new InvocationHandler() {
                 @Override
                 public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+                    System.err.println("--------------- 前置 ----------------");
                     Object result = method.invoke(sample, args);
+                    System.err.println("--------------- 后置 ----------------");
                     return result;
                 }
             });
@@ -44,6 +55,12 @@ public class JdkDynamixProxy {
     public void go() {
         CustomProxy customProxy = new CustomProxy();
         Sample sample = customProxy.getProxyObj();
-        sample.todo();
+//        sample.todo();
+        sample.toReturn();
+    }
+
+    public static void main(String[] args) {
+        JdkDynamixProxy jdkDynamixProxy = new JdkDynamixProxy();
+        jdkDynamixProxy.go();
     }
 }

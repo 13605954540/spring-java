@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: spring-boot-starter-util
+
+server:
+  port: 40501
+
+simplebean:
+  id: 1
+  name: '1'

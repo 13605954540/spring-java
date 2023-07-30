@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: cus
+  redis:
+    host: 127.0.0.1
+    database: 0
+    port: 6379
+    #    password:
+    #    timeout: 5000
+    jedis:
+      pool:
+        max-active: 1024
+        max-idle: 128
+        min-idle: 16
+        max-wait: 5000ms
+server:
+  port: 30000
+
+
+
+

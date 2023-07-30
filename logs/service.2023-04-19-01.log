@@ -1,0 +1,120 @@
+2023-04-19 01:00:41.207 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1681837241207 sessioncount 0
+2023-04-19 01:00:41.212 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 5 expired sessions: 0
+2023-04-19 01:01:41.265 DEBUG 16208 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1681837301265 sessioncount 0
+2023-04-19 01:01:41.266 DEBUG 16208 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 1 expired sessions: 0
+2023-04-19 01:02:41.305 DEBUG 16208 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1681837361305 sessioncount 0
+2023-04-19 01:02:41.305 DEBUG 16208 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-04-19 01:03:41.357 DEBUG 16208 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1681837421357 sessioncount 0
+2023-04-19 01:03:41.357 DEBUG 16208 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-04-19 01:04:41.413 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1681837481413 sessioncount 0
+2023-04-19 01:04:41.413 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-04-19 01:05:41.473 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1681837541473 sessioncount 0
+2023-04-19 01:05:41.473 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-04-19 01:06:41.492 DEBUG 16208 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1681837601492 sessioncount 0
+2023-04-19 01:06:41.492 DEBUG 16208 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-04-19 01:07:41.552 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1681837661552 sessioncount 0
+2023-04-19 01:07:41.552 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-04-19 01:08:41.583 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1681837721583 sessioncount 0
+2023-04-19 01:08:41.583 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-04-19 01:09:41.635 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1681837781635 sessioncount 0
+2023-04-19 01:09:41.635 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-04-19 01:10:41.682 DEBUG 16208 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1681837841682 sessioncount 0
+2023-04-19 01:10:41.682 DEBUG 16208 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-04-19 01:11:41.735 DEBUG 16208 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1681837901735 sessioncount 0
+2023-04-19 01:11:41.735 DEBUG 16208 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-04-19 01:12:41.797 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1681837961797 sessioncount 0
+2023-04-19 01:12:41.797 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-04-19 01:13:41.849 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1681838021849 sessioncount 0
+2023-04-19 01:13:41.849 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-04-19 01:14:41.890 DEBUG 16208 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1681838081890 sessioncount 0
+2023-04-19 01:14:41.890 DEBUG 16208 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-04-19 01:15:41.934 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1681838141934 sessioncount 0
+2023-04-19 01:15:41.934 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-04-19 01:16:41.992 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1681838201992 sessioncount 0
+2023-04-19 01:16:41.992 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-04-19 01:17:42.025 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1681838262024 sessioncount 0
+2023-04-19 01:17:42.025 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 1 expired sessions: 0
+2023-04-19 01:18:42.074 DEBUG 16208 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1681838322074 sessioncount 0
+2023-04-19 01:18:42.074 DEBUG 16208 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-04-19 01:19:42.114 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1681838382114 sessioncount 0
+2023-04-19 01:19:42.114 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-04-19 01:20:42.145 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1681838442145 sessioncount 0
+2023-04-19 01:20:42.145 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-04-19 01:21:42.212 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1681838502212 sessioncount 0
+2023-04-19 01:21:42.212 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-04-19 01:22:42.271 DEBUG 16208 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1681838562271 sessioncount 0
+2023-04-19 01:22:42.271 DEBUG 16208 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-04-19 01:23:42.335 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1681838622335 sessioncount 0
+2023-04-19 01:23:42.335 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-04-19 01:24:42.369 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1681838682369 sessioncount 0
+2023-04-19 01:24:42.369 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-04-19 01:25:42.420 DEBUG 16208 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1681838742420 sessioncount 0
+2023-04-19 01:25:42.420 DEBUG 16208 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-04-19 01:26:42.469 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1681838802469 sessioncount 0
+2023-04-19 01:26:42.469 DEBUG 16208 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-04-19 01:26:42.699 DEBUG 16208 --- [http-nio-8030-Acceptor] o.apache.tomcat.util.threads.LimitLatch  : Counting up[http-nio-8030-Acceptor] latch=1
+2023-04-19 01:26:42.700 DEBUG 16208 --- [http-nio-8030-Acceptor] o.apache.tomcat.util.threads.LimitLatch  : Counting up[http-nio-8030-Acceptor] latch=2
+2023-04-19 01:26:42.717 DEBUG 16208 --- [http-nio-8030-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [689]
+2023-04-19 01:26:42.718 DEBUG 16208 --- [http-nio-8030-exec-2] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@78d1eaf5:org.apache.tomcat.util.net.NioChannel@4b38327:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8030 remote=/0:0:0:0:0:0:0:1:54117]], Read from buffer: [0]
+2023-04-19 01:26:42.730 DEBUG 16208 --- [http-nio-8030-exec-2] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@78d1eaf5:org.apache.tomcat.util.net.NioChannel@4b38327:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8030 remote=/0:0:0:0:0:0:0:1:54117]], Read direct from socket: [689]
+2023-04-19 01:26:42.731 DEBUG 16208 --- [http-nio-8030-exec-2] o.a.coyote.http11.Http11InputBuffer      : Received [GET /source HTTP/1.1
+Host: localhost:8030
+Connection: keep-alive
+Cache-Control: max-age=0
+sec-ch-ua: "Google Chrome";v="111", "Not(A:Brand";v="8", "Chromium";v="111"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+
+]
+2023-04-19 01:26:42.758 DEBUG 16208 --- [http-nio-8030-exec-2] o.a.c.authenticator.AuthenticatorBase    : Security checking request GET /source
+2023-04-19 01:26:42.759 DEBUG 16208 --- [http-nio-8030-exec-2] org.apache.catalina.realm.RealmBase      :   No applicable constraints defined
+2023-04-19 01:26:42.759 DEBUG 16208 --- [http-nio-8030-exec-2] o.a.c.authenticator.AuthenticatorBase    : Not subject to any constraint
+2023-04-19 01:26:42.811 DEBUG 16208 --- [http-nio-8030-exec-2] org.apache.tomcat.util.http.Parameters   : Set encoding to UTF-8
+2023-04-19 01:26:42.811 DEBUG 16208 --- [http-nio-8030-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/source", parameters={}
+2023-04-19 01:26:42.814 DEBUG 16208 --- [http-nio-8030-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.lp.test.controller.SourceController#doSource()
+2023-04-19 01:26:56.996 DEBUG 16208 --- [http-nio-8030-exec-2] com.lp.test.util.LogUtils                : name: 小强
+2023-04-19 01:26:56.997 DEBUG 16208 --- [http-nio-8030-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-04-19 01:26:56.998 DEBUG 16208 --- [http-nio-8030-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["source"]
+2023-04-19 01:26:57.035 DEBUG 16208 --- [http-nio-8030-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-04-19 01:26:57.036 DEBUG 16208 --- [http-nio-8030-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [689]
+2023-04-19 01:26:57.036 DEBUG 16208 --- [http-nio-8030-exec-2] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@78d1eaf5:org.apache.tomcat.util.net.NioChannel@4b38327:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8030 remote=/0:0:0:0:0:0:0:1:54117]], Read from buffer: [0]
+2023-04-19 01:26:57.036 DEBUG 16208 --- [http-nio-8030-exec-2] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@78d1eaf5:org.apache.tomcat.util.net.NioChannel@4b38327:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8030 remote=/0:0:0:0:0:0:0:1:54117]], Read direct from socket: [0]
+2023-04-19 01:26:57.036 DEBUG 16208 --- [http-nio-8030-exec-2] o.a.coyote.http11.Http11InputBuffer      : Received []
+2023-04-19 01:26:57.036 DEBUG 16208 --- [http-nio-8030-exec-2] o.apache.coyote.http11.Http11Processor   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@78d1eaf5:org.apache.tomcat.util.net.NioChannel@4b38327:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8030 remote=/0:0:0:0:0:0:0:1:54117]], Status in: [OPEN_READ], State out: [OPEN]
+2023-04-19 01:26:57.037 DEBUG 16208 --- [http-nio-8030-exec-2] org.apache.tomcat.util.net.NioEndpoint   : Registered read interest for [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@78d1eaf5:org.apache.tomcat.util.net.NioChannel@4b38327:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8030 remote=/0:0:0:0:0:0:0:1:54117]]
+2023-04-19 01:27:08.449 DEBUG 16208 --- [http-nio-8030-exec-3] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [689]
+2023-04-19 01:27:08.449 DEBUG 16208 --- [http-nio-8030-exec-3] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@78d1eaf5:org.apache.tomcat.util.net.NioChannel@4b38327:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8030 remote=/0:0:0:0:0:0:0:1:54117]], Read from buffer: [0]
+2023-04-19 01:27:08.449 DEBUG 16208 --- [http-nio-8030-exec-3] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@78d1eaf5:org.apache.tomcat.util.net.NioChannel@4b38327:java.nio.channels.SocketChannel[connected local=/0:0:0:0:0:0:0:1:8030 remote=/0:0:0:0:0:0:0:1:54117]], Read direct from socket: [689]
+2023-04-19 01:27:08.449 DEBUG 16208 --- [http-nio-8030-exec-3] o.a.coyote.http11.Http11InputBuffer      : Received [GET /source HTTP/1.1
+Host: localhost:8030
+Connection: keep-alive
+Cache-Control: max-age=0
+sec-ch-ua: "Google Chrome";v="111", "Not(A:Brand";v="8", "Chromium";v="111"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+
+]
+2023-04-19 01:27:08.450 DEBUG 16208 --- [http-nio-8030-exec-3] o.a.c.authenticator.AuthenticatorBase    : Security checking request GET /source
+2023-04-19 01:27:08.450 DEBUG 16208 --- [http-nio-8030-exec-3] org.apache.catalina.realm.RealmBase      :   No applicable constraints defined
+2023-04-19 01:27:08.450 DEBUG 16208 --- [http-nio-8030-exec-3] o.a.c.authenticator.AuthenticatorBase    : Not subject to any constraint
+2023-04-19 01:27:08.450 DEBUG 16208 --- [http-nio-8030-exec-3] org.apache.tomcat.util.http.Parameters   : Set encoding to UTF-8
+2023-04-19 01:27:08.450 DEBUG 16208 --- [http-nio-8030-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/source", parameters={}
+2023-04-19 01:27:08.450 DEBUG 16208 --- [http-nio-8030-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.lp.test.controller.SourceController#doSource()

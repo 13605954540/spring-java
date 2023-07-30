@@ -1,7 +1,7 @@
 package com.lp.aspect;
 
 /**
- * 观察者模式
+ * 观察者模式(暂时不要了，应该是错误的)
  *
  * <pre>
  *     定义：通过为多个复杂的子系统提供一个一致的接口，而使这些子系统更加容易被访问的模式。。
@@ -14,7 +14,7 @@ package com.lp.aspect;
  */
 public class Sample {
 
-    public class Video {
+/*    public class Video {
 
         public void on() {
 
@@ -56,5 +56,5 @@ public class Sample {
             video.off();
             tv.off();
         }
-    }
+    }*/
 }

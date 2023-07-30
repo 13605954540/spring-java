@@ -27,6 +27,10 @@
         <module>framework</module>
         <module>final</module>
         <module>learn</module>
+        <module>thread</module>
+        <module>communication</module>
+        <module>question-deal</module>
+        <module>kafka-spark</module>
         <!--        <module>spring-elasticsearch</module>-->
     </modules>
 
